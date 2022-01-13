@@ -25,8 +25,42 @@
             color: white;
         }
 
+        @media (min-width: 1200px) {
+            #One-time-conatiner {
+                max-width: 555px;
+                border: 1px solid #B0C9CE;
+            }
+        }
+
+        #price .container .row {
+            text-align: center;
+        }
+
         #One_time {
             background-color: #1D7A8C;
+            padding: 12px 0;
+        }
+
+        #price_list {
+            padding: 0 140px;
+        }
+
+        #price_list ul {
+            list-style-image: url('./assets/forma-1_5.png');
+            text-align: left;
+        }
+
+        #extra-services-container {
+            border-top: solid 2px #DCDCDC;
+        }
+
+        .extra-services-lists {
+            border: solid 2px #DCDCDC;
+            border-radius: 50%;
+        }
+
+        .extra-services-lists-img {
+            padding: 30px 23px;
         }
     </style>
 </head>
@@ -47,7 +81,7 @@
                             <a class="nav-link" aria-current="page" href="#">Book a Cleaner</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Prices</a>
+                            <a class="nav-link" href="./price.html">Prices</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Our Guarantee</a>
@@ -84,7 +118,7 @@
         </nav>
     </header>
     <img class="container-fluid p-0" src="./assets/group-18.png">
-    <div class="container mt-3" id="faqs">
+    <div class="container mt-3" id="price">
         <div class="row">
             <h2 class="heading-dark text-center">Prices</h2>
         </div>
@@ -93,9 +127,47 @@
                 <img src="./assets/forma-1-copy-5.png"> ------
             </p>
         </div>
-        <div class="container">
+        <div class="container" id="One-time-conatiner">
             <div class="row">
                 <h3 id="One_time" class="text-white">One Time</h3>
+            </div>
+            <div class="row heading-dark">
+                <h2>€ 20/hr</h2>
+            </div>
+            <div class="row" id="price_list">
+                <ul>
+                    <li class="mt-2">Lower prices</li>
+                    <li class="mt-2">Easy online & secure payment</li>
+                    <li class="mt-2">Easy amendment</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mt-5" id="extra-services-container">
+            <div class="row mt-5">
+                <h2 class="heading-dark text-center">Extra services</h2>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="para-dark"> ------
+                    <img src="./assets/forma-1-copy-5.png"> ------
+                </p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1 extra-services-lists"><img class="extra-services-lists-img" src="./assets/3.png">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1 extra-services-lists"><img class="extra-services-lists-img" src="./assets/5.png">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1 extra-services-lists"><img class="extra-services-lists-img" src="./assets/4.png">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1 extra-services-lists"><img class="extra-services-lists-img" src="./assets/2.png">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-1 extra-services-lists"><img class="extra-services-lists-img" src="./assets/1.png">
+                </div>
+                <div class="col-lg-1"></div>
             </div>
         </div>
     </div>
