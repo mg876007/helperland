@@ -13,7 +13,14 @@
     border-radius: 20px;
 }
 #intro{
-background:black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+}
+.main{
+    padding-top: 100px;
 }
 .main-info{
     margin-top: 178px;
