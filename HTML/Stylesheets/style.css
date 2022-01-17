@@ -270,3 +270,26 @@ padding :20px 0;
 #about-page-img{
     padding: 77px 0 0 0;
 }
+#become-page-banner{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+#registration-form{
+    background-color: white;
+    margin: 110px 565px 0px 565px;
+    border-radius: 10px;
+}
+#get-started-btn{
+    background-color: #1D7A8C;
+    border-radius: 23px;
+}
+.how-img{
+    height: 260px;
+    width: 260px;
+    object-fit: none;
+    border-radius: 50%;
+}
