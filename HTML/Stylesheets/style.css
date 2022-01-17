@@ -157,6 +157,7 @@ color: #565656;
 opacity: 1;
 border: 1px solid #565656;
 padding-left: 22px;
+background: #F4F5F8;
 }
 #submit{
     background-color: #FF7B6D;
@@ -191,4 +192,78 @@ padding :20px 0;
     border-radius: 20px;
     float: right;
     margin-right: 20px;
+}
+#header nav {
+    background: #525252;
+    opacity: 0.8;
+}
+
+.nav-link {
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    #One-time-conatiner {
+        max-width: 555px;
+        border: 1px solid #B0C9CE;
+    }
+}
+
+#price-page-img {
+    padding: 80px 0 0 0;
+}
+
+#price .container .row {
+    text-align: center;
+}
+
+#One_time {
+    background-color: #1D7A8C;
+    padding: 12px 0;
+}
+
+#price_list {
+    padding: 0 140px;
+}
+
+#price_list ul {
+    list-style-image: url('./assets/forma-1_5.png');
+    text-align: left;
+}
+
+#extra-services-container {
+    border-top: solid 2px #DCDCDC;
+}
+
+.extra-services-lists-img {
+    border: 1px solid #B0C9CE;
+    height: 108px;
+    width: 108px;
+    border-radius: 50%;
+    object-fit: none;
+}
+
+.min-30 {
+    color: #1D7A8C;
+    opacity: 1;
+    font-weight: bold;
+}
+
+#include-section {
+    background-color: #F6F6F6;
+}
+
+#include-services ul {
+    list-style-image: url('./assets/right-arrow-grey.png');
+}
+
+#right-text {
+    text-align: right;
+}
+#submit-contact{
+    background: #1D7A8C;
+    padding: 10px 50px;
+}
+#map{
+    width: 100%;
 }
