@@ -13,15 +13,12 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        #header {
+        #header nav {
             background: #525252;
+            opacity: 0.8;
         }
 
         .nav-link {
-            color: white;
-        }
-
-        .nav-link:hover {
             color: white;
         }
 
@@ -30,6 +27,10 @@
                 max-width: 555px;
                 border: 1px solid #B0C9CE;
             }
+        }
+
+        #price-page-img {
+            padding: 80px 0 0 0;
         }
 
         #price .container .row {
@@ -54,18 +55,39 @@
             border-top: solid 2px #DCDCDC;
         }
 
-        .extra-img {
-            border: solid 2px #DCDCDC;
+        .extra-services-lists-img {
+            border: 1px solid #B0C9CE;
+            height: 108px;
+            width: 108px;
             border-radius: 50%;
+            object-fit: none;
+        }
+
+        .min-30 {
+            color: #1D7A8C;
+            opacity: 1;
+            font-weight: bold;
+        }
+
+        #include-section {
+            background-color: #F6F6F6;
+        }
+
+        #include-services ul {
+            list-style-image: url('./assets/right-arrow-grey.png');
+        }
+
+        #right-text {
+            text-align: right;
         }
     </style>
 </head>
 
 <body>
     <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./assets/logo-small.png" alt="" srcset=""></a>
+                <a class="navbar-brand" href="./index.html"><img src="./assets/logo-small.png" alt="" srcset=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -74,13 +96,15 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="header_nav_lists">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Book a Cleaner</a>
+                            <a class="nav-link border border-2 rounded-pill bg-blue-cust" aria-current="page"
+                                href="#">Book
+                                Now</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./price.html">Prices</a>
+                            <a class="nav-link border border-2 rounded-pill" href="./price.html">Prices & services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Guarantee</a>
+                            <a class="nav-link" href="#">Warranty</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
@@ -89,46 +113,34 @@
                             <a class="nav-link" href="#">Contact us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link border border-2 rounded-pill bg-blue-cust" href="#">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Become a Helper</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./assets/ic-flag.png" alt="" srcset="">
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link border border-2 rounded-pill bg-blue-cust" href="#">Become a Helper</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <img class="container-fluid p-0" src="./assets/group-18.png">
+    <img class="container-fluid" id="price-page-img" src="./assets/group-18.png">
     <div class="container mt-3" id="price">
         <div class="row">
             <h2 class="heading-dark text-center">Prices</h2>
         </div>
         <div class="d-flex justify-content-center">
-            <p class="para-dark"> ------
-                <img src="./assets/forma-1-copy-5.png"> ------
+            <p class="para-dark">
+                <hr style="height:1px;width: 62px;border-width:0;color:gray;background-color:gray">
+                <img src="./assets/forma-1-copy-5.png" style="    height: 24px;margin: 4.5px;">
+                <hr style="height:1px;width: 62px;border-width:0;color:gray;background-color:gray">
             </p>
         </div>
-        <div class="container" id="One-time-conatiner">
+        <div class="container mt-5" id="One-time-conatiner">
             <div class="row">
                 <h3 id="One_time" class="text-white">One Time</h3>
             </div>
             <div class="row heading-dark">
-                <h2>€ 20/hr</h2>
+                <h1>€ 20<span class="fs-4">/hr</span></h1>
             </div>
             <div class="row" id="price_list">
                 <ul>
@@ -143,42 +155,182 @@
                 <h2 class="heading-dark text-center">Extra services</h2>
             </div>
             <div class="d-flex justify-content-center">
-                <p class="para-dark"> ------
-                    <img src="./assets/forma-1-copy-5.png"> ------
+                <p class="para-dark">
+                    <hr style="height:2px;width:62px;border-width:0;color:gray;background-color:gray">
+                    <img src="./assets/forma-1-copy-5.png" style="height:24px;margin:4.5px;">
+                    <hr style="height: 2px;width:62px;border-width:0;color:gray;background-color:gray">
                 </p>
             </div>
             <div class="row justify-content-evenly mt-5">
-                <div class="col-lg-1 extra-services-lists">
-                    <div class="extra-img py-4">
-                        <img class="extra-services-lists-img" src="./assets/3.png">
-                    </div>
-                    <p>Inside cabinets</p>
+                <div class="col-lg-2 extra-services-lists">
+                    <img class="extra-services-lists-img" src="./assets/3.png">
+                    <p class="para-dark mt-2">Inside cabinets <br> <span class="min-30"> 30
+                            minutes</span></p>
                 </div>
 
-                <div class="col-lg-1 extra-services-lists ">
-                    <div class="extra-img py-4"><img class="extra-services-lists-img" src="./assets/5.png">
-                    </div>
+                <div class="col-lg-2 extra-services-lists ">
+                    <img class="extra-services-lists-img" src="./assets/5.png">
+                    <p class="para-dark mt-2">Inside fridge <br> <span class="min-30"> 30 minutes</span></p>
                 </div>
 
-                <div class="col-lg-1 extra-services-lists ">
-                    <div class="extra-img px-4"><img class="extra-services-lists-img" src="./assets/4.png">
-                    </div>
+                <div class="col-lg-2 extra-services-lists ">
+                    <img class="extra-services-lists-img" src="./assets/4.png">
+                    <p class="para-dark mt-2">Inside oven <br> <span class="min-30"> 30 minutes</span></p>
                 </div>
 
-                <div class="col-lg-1 extra-services-lists ">
-                    <div class="extra-img border border-2 rounded-circle"><img class="extra-services-lists-img p-4"
-                            src="./assets/2.png">
-                    </div>
+                <div class="col-lg-2 extra-services-lists ">
+                    <img class="extra-services-lists-img" src="./assets/2.png">
+                    <p class="para-dark mt-2">Laundry wash & dry <br> <span class="min-30"> 30 minutes</span></p>
                 </div>
 
-                <div class="col-lg-1 extra-services-lists ">
-                    <div class="extra-img "><img class="extra-services-lists-img" src="./assets/1.png">
-                    </div>
+                <div class="col-lg-2 extra-services-lists ">
+                    <img class="extra-services-lists-img" src="./assets/1.png">
+                    <p class="para-dark mt-2">Interior windows <br> <span class="min-30"> 30 minutes</span></p>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="container-fluid mt-5" id="include-section">
+        <h2 class="text-center pt-5 heading-dark">What we include in cleaning</h2>
+        <div class="d-flex justify-content-center">
+            <p class="para-dark">
+                <hr style="height:2px;width:62px;border-width:0;color:gray;background-color:gray">
+                <img src="./assets/forma-1-copy-5.png" style="height:24px;margin:4.5px;">
+                <hr style="height: 2px;width:62px;border-width:0;color:gray;background-color:gray">
+            </p>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4" id="include-services">
+                    <img src="./assets/group-18_3.png">
+                    <p class="para-dark fs-5 mt-3 fw-bold">
+                        Bedroom and Living Room
+                    </p>
+                    <ul class="para-dark">
+                        <li>Dust all accessible surfaces</li>
+                        <li>Wipe down all mirrors and glass fixtures</li>
+                        <li>Clean all floor surfaces</li>
+                        <li>Take out garbage and recycling</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4" id="include-services">
+                    <img src="./assets/group-18_4.png">
+                    <p class="para-dark fs-5 mt-3 fw-bold">
+                        Bathrooms
+                    </p>
+                    <ul class="para-dark">
+                        <li>Wash and sanitize the toilet, shower, tub, sink</li>
+                        <li>Dust all accessible surfaces</li>
+                        <li>Wipe down all mirrors and glass fixtures</li>
+                        <li>Clean all floor surfaces</li>
+                        <li>Take out garbage and recycling</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4" id="include-services">
+                    <img src="./assets/group-18_2.png">
+                    <p class="para-dark fs-5 mt-3 fw-bold">
+                        Kitchen
+                    </p>
+                    <ul class="para-dark">
+                        <li>Dust all accessible surfaces</li>
+                        <li>Empty sink and load up dishwasher</li>
+                        <li>Wipe down all mirrors and glass fixtures</li>
+                        <li>Clean all floor surfaces</li>
+                        <li>Take out garbage and recycling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <h2 class="heading-dark text-center">Why Helperland</h2>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="para-dark">
+                <hr style="height:2px;width:62px;border-width:0;color:gray;background-color:gray">
+                <img src="./assets/forma-1-copy-5.png" style="height:24px;margin:4.5px;">
+                <hr style="height: 2px;width:62px;border-width:0;color:gray;background-color:gray">
+            </p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-4" id="right-text">
+                <p class="para-dark fs-7 mt-3 fw-bold text-right">Experienced and vetted professionals</p>
+                <p class="text-right">dominate the industry in scale and scope with an adaptable, extensive network that
+                    consistently delivers exceptional results.
+                </p>
+                <p class="para-dark fs-7 mt-3 fw-bold text-right">Dedicated customer service</p>
+                <p>to our customers and are guided in all we do by their needs. The team is always happy to support you
+                    and offer all the information. you need.
+                </p>
+            </div>
+            <div class="col-sm-4 mt-3 text-center">
+                <img src="./assets/the-best-img-1.png">
+            </div>
+            <div class="col-sm-4">
+                <p class="para-dark fs-7 mt-3 fw-bold text-right">Every cleaning is insured</p>
+                <p class="text-right">and seek to provide exceptional service and engage in proactive behavior. We‘d be
+                    happy to clean your homes.
+                </p>
+                <p class="para-dark fs-7 mt-3 fw-bold text-right">Secure online payment</p>
+                <p>Payment is processed securely online. Customers pay safely online and manage the booking.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid newsletter mt-5">
+        <div class="row">
+            <a id="forma" class="btn text-center" href="#intro"><img src="./assets/forma-1.png" alt="" srcset=""></a>
+            <div class="col text-center">
+                <h5>GET OUR NEWSLETTER</h5>
+            </div>
+            <img src="./assets/layer-598.png" id="layer-598" alt="" srcset="">
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <input type="text" id="input" placeholder="YOUR EMAIL">
+                <button type="button" class="btn text-white" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section bg-black mt-5">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class=" container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/footer-logo.png" id="footer-logo"></a>
+                <div class="d-flex">
+                    <ul class="navbar-nav" id="footer-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TESTIMONIALS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faqs.html">FAQS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INSURANCE POLICY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">IMPRESSUM</a>
+                        </li>
+                    </ul>
+                    <div id="social" class="d-flex">
+                        <a class="nav-link" href="#"><img src="./assets/ic-facebook.png"></a>
+                        <a class="nav-link" href="#"><img src="./assets/ic-instagram.png"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="footer container bg-black border-top" id="footer">
+            <p class="footer-text text-center text-white">©2018 Helperland. All rights reserved. Terms and Conditions |
+                Privacy Policy
+            </p>
+        </section>
+    </div>
 </body>
 
 </html>l

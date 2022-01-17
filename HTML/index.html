@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiperland</title>
     <link rel="stylesheet" href="./Stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -16,7 +17,7 @@
 
 <body>
     <div>
-        <img src="./assets/Landing-Page-background-image.png" id="intro">
+        <img src="./assets/Landing-Page-background-image.png" class="container-fluid p-0" id="intro">
         <header>
             <nav class="navbar fixed-top navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -329,6 +330,18 @@
             <button type="submit" class="btn" id="ok">OK!</button>
         </p>
     </section>
+    <script>
+        $(window).scroll(
+            function () {
+                if ($(document).scrollTop() > 100) {
+                    $("header nav").css('background', 'rgb(0,0,0,0.6)');
+                }
+                else {
+                    $("header nav").css('background', 'rgb(0,0,0,0)');
+                }
+            }
+        );
+    </script>
 </body>
 
 </html>

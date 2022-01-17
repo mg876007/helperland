@@ -8,14 +8,11 @@
 .navbar-light .navbar-nav .nav-item .nav-link:hover{
     color: white;
 }
-.nav-link:hover{
-    border: solid 2px white;
-    border-radius: 20px;
+.bg-blue-cust {
+    background-color: #29626D;
 }
 #intro{
     position: absolute;
-    left: 0px;
-    top: 0px;
     z-index: -1;
     width: 100%;
 }
@@ -66,6 +63,8 @@ opacity: 1;
 .para-dark{
 color: #565656;
 opacity: 1;
+font-size: 15px;
+letter-spacing: 0;
 }
 #blog{
     padding-left: 100px;
