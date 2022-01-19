@@ -276,20 +276,36 @@ padding :20px 0;
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 100%;
 }
 #registration-form{
     background-color: white;
-    margin: 110px 565px 0px 565px;
+    margin: 210px 565px 0px 565px;
     border-radius: 10px;
 }
 #get-started-btn{
     background-color: #1D7A8C;
     border-radius: 23px;
 }
+#how-container{
+    padding-left: 200px;
+    padding-right: 200px;
+}
 .how-img{
+    border-radius: 50%;
     height: 260px;
     width: 260px;
-    object-fit: none;
-    border-radius: 50%;
+}
+#user-welcome{
+    margin-top: 80px;
+    background-color: #F9F9F9;
+}
+#user-welcome h1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#vertical-nav{
+    background-color: #1D7A8C;
+}
+#vertical-nav li{
+    border-bottom: 1px solid #FFFFFF;
 }
