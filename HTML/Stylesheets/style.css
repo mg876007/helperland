@@ -309,3 +309,6 @@ padding :20px 0;
 #vertical-nav li{
     border-bottom: 1px solid #FFFFFF;
 }
+#admin-navbar{
+    background-color: #1FB6FF;
+}
