@@ -17,8 +17,24 @@ namespace helperland.Controllers
         {
             return View();
         }
+        public IActionResult Become_a_helper()
+        {
+            return View();
+        }
 
-        public IActionResult Privacy()
+        public IActionResult Faq()
+        {
+            return View();
+        }
+        public IActionResult Price()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult About()
         {
             return View();
         }

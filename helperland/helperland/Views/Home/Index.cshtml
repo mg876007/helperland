@@ -1,8 +1,237 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@{
+    Layout = "_Layout";
+}
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<img src="~/images/Landing-Page-background-image.png" class="container-fluid p-0" id="intro">
+        <div class="main container-fluid">
+                <div class="main-info text-white row">
+                    <div class="col-md-4">
+                        <h2>Lorem ipsum text</h2>
+                        <ul class="main-info-list">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="button" href="#" id="cleaner-button" class="btn text-white">Let’s Book a
+                        Cleaner</button>
+                </div>
+                <div class="main-info-process mt-5 mx-5">
+                    <div class="row py-5 text-center text-white">
+                        <div class="col-md p-0"><img src="~/images/step-1.png">
+                            <p class="pt-5">Enter your postcode</p>
+                        </div>
+                        <div class="col-md p-0"><img class="mt-3" src="~/images/step-arrow-1.png"></div>
+                        <div class="col-md p-0"><img src="~/images/step-2.png">
+                            <p class="pt-5">Select your plan</p>
+                        </div>
+                        <div class="col-md p-0"><img class="mt-3" src="~/images/step-arrow-1-copy.png"></div>
+                        <div class="col-md p-0"><img src="~/images/step-3.png">
+                            <p class="pt-5">Pay securely online</p>
+                        </div>
+                        <div class="col-md p-0"><img class="mt-3" src="~/images/step-arrow-1.png"></div>
+                        <div class="col-md p-0"><img src="~/images/step-4.png">
+                            <p class="pt-5">Enjoy amazing service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="down-arrow text-center">
+                    <a href="#footer"><img src="~/images/group-18_5.png" alt="" srcset=""></a>
+                </div>
+        </div>
+        <section class="container mt-5" id="helper">
+            <div class="row helper-heading">
+                <h2 class="text-center heading-dark">Why Helperland</h2>
+            </div>
+            <div class="row py-5">
+                <div class="col-md">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="~/images/helper-img-1.png" alt="Card image">
+                        <div class="card-body">
+                            <h3 class="card-title heading-dark my-4 text-center">Experience & Vetted Professionals</h3>
+                            <p class="card-text para-dark">dominate the industry in scale and scope with an adaptable,
+                                extensive
+                                network that consistently delivers exceptional results.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md px-5">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="~/images/group-23.png" alt="Card image">
+                        <div class="card-body">
+                            <h3 class="card-title heading-dark mt-4 text-center">Secure Online Payment</h3>
+                            <p class="card-text para-dark mt-5">dominate the industry in scale and scope with an
+                                adaptable,
+                                extensive
+                                network that consistently delivers exceptional results.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="~/images/group-24.png" alt="Card image">
+                        <div class="card-body">
+                            <h3 class="card-title heading-dark my-4 text-center">Dedicated Customer Service</h3>
+                            <p class="card-text para-dark mt-5">to our customers and are guided in all we do by their needs.
+                                The
+                                team is
+                                always happy to support you and offer all the information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5" id="blog">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="heading-dark mb-5">Lorem ipsum dolor sit amet, consectetur</h3>
+                    <p class="para-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nisi sapien,
+                        suscipit ut accumsan
+                        vitae, pulvinar ac libero. Aliquam erat volutpat. Nullam quis ex odio. Nam bibendum cursus
+                        purus,
+                        vel efficitur urna finibus vitae. Nullam finibus aliquet pharetra. Morbi in sem dolor. Integer
+                        pretium hendrerit ante quis vehicula. Mauris consequat ornare enim, sed lobortis quam ultrices
+                        sed.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="~/images/group-36.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mb-5">
+                <h1 class="text-center heading-dark">Our Blog</h1>
+            </div>
+            <div class="row">
+                <div class="col-md m-3">
+                    <div class="card blog-card border-0">
+                        <img class="card-img-top blog-img img-fluid" src="~/images/group-28.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                            <p class="date">January 28, 2019</p>
+                            <p class="card-text para-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                fermentum
+                                metus pulvinar aliquet.</p>
+                            <a href="#" class="read-more-link">Read the Post<img src="~/images/shape-2.png" alt=""
+                                    srcset=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md m-3">
+                    <div class="card blog-card border-0">
+                        <img class="card-img-top blog-img img-fluid" src="~/images/group-29.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                            <p class="date">January 28, 2019</p>
+                            <p class="card-text para-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                fermentum
+                                metus pulvinar aliquet.</p>
+                            <a href="#" class="read-more-link">Read the Post<img src="~/images/shape-2.png" alt=""
+                                    srcset=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md m-3">
+                    <div class="card blog-card border-0">
+                        <img class="card-img-top blog-img img-fluid" src="~/images/group-30.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                            <p class="date">January 28, 2019</p>
+                            <p class="card-text para-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                fermentum
+                                metus pulvinar aliquet.</p>
+                            <a href="#" class="read-more-link">Read the Post<img src="~/images/shape-2.png" alt=""
+                                    srcset=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid mt-5 pb-5" id="customers-review">
+            <div class="row">
+                <h3 class="heading-dark text-center mt-5">What Our Customers Say</h3>
+            </div>
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md">
+                        <div class="bg-white card customers-card p-3">
+                            <img src="~/images/message.png" id="message-pic">
+                        <div class="customer-profile d-flex mt-5">
+                            <img class="customers-img" src="~/images/group-31.png">
+                            <h4 class="customer-name ">Lary Watson<br><span class="city">Manchester</span></h4>
+                        </div>
+                        <div>
+                            <p class="customer-text mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                fermentum
+                                metus pulvinar aliquet consequat. Praesent nec malesuada nibh.<br><br> Nullam et metus
+                                congue,
+                                auctor augue sit amet, consectetur tortor.</p>
+                            <a href="#" class="read-more-link">Read More<img src="~/images/shape-2.png" alt=""
+                                    srcset=""></a>
+                        </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="col-md">
+                        <div class="bg-white card customers-card p-3">
+                        <img src="~/images/message.png" id="message-pic">
+                        <div class="customer-profile d-flex mt-5">
+                            <img class="customers-img" src="~/images/group-32.png">
+                            <h4 class="customer-name ">John Smith<br><span class="city">Manchester</span></h4>
+
+                        </div>
+                        <div>
+                            <p class="customer-text mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                fermentum
+                                metus pulvinar aliquet consequat. Praesent nec malesuada nibh.<br><br> Nullam et metus
+                                congue,
+                                auctor augue sit amet, consectetur tortor.</p>
+                            <a href="#" class="read-more-link">Read More<img src="~/images/shape-2.png" alt=""
+                                    srcset=""></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="bg-white card customers-card p-3">
+                        <img src="~/images/message.png" id="message-pic">
+                        <div class="customer-profile d-flex mt-5">
+                            <img class="customers-img" src="~/images/group-33.png">
+                            <h4 class="customer-name ">Lars Johnson<br><span class="city">Manchester</span>
+                        </div>
+                        <div>
+                            <p class="customer-text mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                fermentum
+                                metus pulvinar aliquet consequat. Praesent nec malesuada nibh.<br><br> Nullam et metus
+                                congue,
+                                auctor augue sit amet, consectetur tortor.</p>
+                            <a href="#" class="read-more-link">Read More<img src="~/images/shape-2.png" alt=""
+                                    srcset=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container-fluid newsletter mt-5">
+                <div class="row">
+                    <a id="forma" class="btn text-center" href="#intro"><img src="~/images/forma-1.png" alt=""
+                            srcset=""></a>
+                    <div class="col text-center">
+                        <h5>GET OUR NEWSLETTER</h5>
+                    </div>
+                    <img src="~/images/layer-598.png" id="layer-598" alt="" srcset="">
+                </div>
+                <div class="row">
+                    <div class="col-md text-center">
+                        <input type="text" id="input" placeholder="YOUR EMAIL">
+                        <button type="button" class="btn text-white" id="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>

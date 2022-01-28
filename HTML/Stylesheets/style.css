@@ -115,14 +115,7 @@ opacity: 1;
 .modal-login .hint-text a {
 	color: #999;
 }
-#helper{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-.helper-heading{
-    padding-bottom: 80px;
-    padding-top: 80px;
-}
+
 .heading-dark{
 color: #4F4F4F;
 opacity: 1;
@@ -140,20 +133,16 @@ letter-spacing: 0;
 .date{
 font-size: 15px;
 text-align: left;
-letter-spacing: 0px;
 color: #A3A3A3;
-opacity: 1;
 }
 .blog-card{
     background: #FFFFFF 0% 0% no-repeat padding-box;
 box-shadow: 0px 0px 30px #E4EBF0;
 border-radius: 4px;
-opacity: 1;
 }
 .blog-img{
     width: 357px;
 height: 164px;
-opacity: 1;
 }
 .read-more-link{
     text-decoration: none;

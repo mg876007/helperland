@@ -9,37 +9,108 @@
     <link rel="stylesheet" href="~/helperland.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <header id="layout-1">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">helperland</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="/"><img src="~/images/logo-large.png" alt="" srcset=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto" id="header_nav_lists">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white border border-2 rounded-pill" aria-current="page" href="#">Book a
+                                Cleaner</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" href="/home/Price">Prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Our Guarantee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#myModal" class="trigger-btn text-white nav-link border border-2 rounded-pill"
+                                data-toggle="modal">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white border border-2 rounded-pill"
+                                href="/home/Become_a_helper">Become a Helper</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="~/images/ic-flag.png" alt="" srcset="">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container-fluid p-0">
+        <main role="main" class="">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - helperland - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <section class="bg-black">
+            <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="~/images/footer-logo.png" id="footer-logo"></a>
+                    <ul class="navbar-nav justify-content-around" id="footer-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/home/About">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">TESTIMONIALS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/home/Faq">FAQS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">INSURANCE POLICY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">IMPRESSUM</a>
+                        </li>
+                    </ul>
+                    <div id="social" class="d-flex">
+                        <a class="nav-link" href="#"><img src="~/images/ic-facebook.png"></a>
+                        <a class="nav-link" href="#"><img src="~/images/ic-instagram.png"></a>
+                    </div>
+            </div>
+        </nav>
+        </section>
+        <section id="footer" class="bg-black">
+            <div class="container border-top d-flex">
+                <p class="footer-text text-center text-white m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            feugiat nunc
+            libero, ac
+            malesuada ligula aliquam
+            ac. <a href="#">Privacy Policy</a></p>
+            <button type="submit" class="btn ms-auto" id="ok">OK!</button>
         </div>
+        </section>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

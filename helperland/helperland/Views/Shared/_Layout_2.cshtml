@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - helperland</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/helperland.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="~/images/logo-small.png" alt="" srcset=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="header_nav_lists">
+                        <li class="nav-item px-2">
+                            <a class="nav-link border border-2 rounded-pill bg-blue-cust" aria-current="page"
+                                href="#">Book Now</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link border border-2 rounded-pill" href="/home/price">Prices &
+                                Services</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Warranty</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/home/Contact">Contact us</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link border border-2 rounded-pill bg-blue-cust" href="#">Login</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link border border-2 rounded-pill bg-blue-cust" href="/home/become_a_helper">Become a Helper</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid p-0">
+        <main role="main" class="">
+             @RenderBody()
+        </main>
+    </div>
+    <div class="footer-section bg-black mt-5">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class=" container-fluid">
+                <a class="navbar-brand" href="/"><img src="~/images/footer-logo.png" id="footer-logo"></a>
+                    <ul class="navbar-nav justify-content-around" id="footer-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/home/About">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">TESTIMONIALS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/home/Faq">FAQS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">INSURANCE POLICY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">IMPRESSUM</a>
+                        </li>
+                    </ul>
+                    <div id="social" class="d-flex">
+                        <a class="nav-link" href="#"><img src="~/images/ic-facebook.png"></a>
+                        <a class="nav-link" href="#"><img src="~/images/ic-instagram.png"></a>
+                    </div>
+            </div>
+        </nav>
+        <section class="footer container bg-black border-top" id="footer">
+            <p class="footer-text text-center text-white m-0">©2018 Helperland. All rights reserved. Terms and Conditions |
+                Privacy Policy
+            </p>
+        </section>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
