@@ -23,3 +23,9 @@ $(window).on('resize', function () {
         $(".main").css({ "background": "grey" });
     }
 });
+$(document).ready(function () {
+    $('#loginModal').modal('show');
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+});

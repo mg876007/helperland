@@ -1,9 +1,8 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿
+ @{
     Layout = "_Layout_2";
 }
+@model helperland.ViewModels.ContactViewModel;
 <img class="container-fluid" id="price-page-img" src="~/images/group-16_2.png">
     <div class="container mt-3" id="price">
         <div class="row">
@@ -35,38 +34,46 @@
         <div class="row my-5">
             <h2 class="heading-dark text-center">Get in touch with us</h2>
         </div>
-        <div class="row mx-5 justify-content-center">
-            <div class="col-md-6">
-                <div class="input-group row mb-3">
-                <input type="text" class="form-control col-sm m-2" placeholder="First name" aria-label="Firstname"
-                    aria-describedby="basic-addon1">
-                <input type="text" class="form-control col-sm m-2" placeholder="Last name" aria-label="Lastname"
-                    aria-describedby="basic-addon2">
-            </div>
-            <div class="input-group row mb-3">
-                <div class="col-sm p-0 m-2 d-flex">
-                    <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon3">+49</span>
+        @if (ViewBag.IsSuccess==true)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Submitted</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" area-label="Close">
+             
+                </button>
+             </div>
+        }
+        <form method="post" >
+            <div class="row mx-5 justify-content-center">
+                <div class="col-md-6">
+                    <div class="row mb-3">
+                    <input asp-for="Name" class="form-control m-2" placeholder="Name">
                     </div>
-                <input type="text" class="form-control" placeholder="Mobile number" aria-label="Mobile_no"
-                    aria-describedby="basic-addon3">
+                    <div class="row mb-3">
+                        <div class="col-sm p-0 m-2 d-flex">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">+49</span>
+                            </div>
+                            <input asp-for="PhoneNumber" class="form-control" placeholder="Mobile number">
+                            
+                        </div>
+                        <input asp-for="Email" class="form-control col-sm m-2" placeholder="Email address">
+                        
+                    </div>
+                    <div class=" row mb-3">
+                        <input asp-for="Subject" class="form-control m-2" placeholder="Subject">
+                        
+                    </div>
+                    <div class=" row mb-3">
+                        <textarea  asp-for="Message" class="form-control m-2" placeholder="Message"></textarea>
+                        
+                    </div>
+                    <div asp-validation-summary=ModelOnly class="text-danger"></div>
+                    <input class="btn btn-primary rounded-pill" id="submit-contact" type="submit" value="Submit">
                 </div>
-                <input type="text" class="form-control col-sm m-2" placeholder="Email address" aria-label="email"
-                    aria-describedby="basic-addon4">
             </div>
-            <div class="input-group row mb-3">
-                <input type="text" class="form-control m-2" placeholder="Subject" aria-label="Subject"
-                    aria-describedby="basic-addon5">
-            </div>
-            <div class="input-group row mb-3">
-                <input type="text" class="form-control m-2" height="146" placeholder="Message" aria-label="Message"
-                    aria-describedby="basic-addon6">
-            </div>
-        
-        <input class="btn btn-primary rounded-pill" id="submit-contact" type="submit" value="Submit">
-    </div>
-            </div>
-            </div>
+        </form>
+     </div>
     <img src="~/images/group-16.png" id="map" class="mt-5">
     <div class="container newsletter mt-5">
         <div class="row">

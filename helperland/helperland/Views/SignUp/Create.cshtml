@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "_Layout_2";
+}
+@model helperland.ViewModels.SignupUserViewModel;
+<div class="container justify-content-center my-5" id="create-account">
+        <div class="row">
+            <h2 class="heading-dark text-center">Create an account</h2>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <p class="para-dark">
+                <hr style="height:1px;width: 62px;border-width:0;color:gray;background-color:gray">
+                <img src="~/images/forma-1-copy-5.png" style="    height: 24px;margin: 4.5px;">
+                <hr style="height:1px;width: 62px;border-width:0;color:gray;background-color:gray">
+            </p>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <form method="post" class="col-6">
+            <div class="row">
+                <div class="col m-1">
+                    <input asp-for="Firstname" class="form-control" placeholder="First name" />
+                </div>
+                <div class="col m-1">
+                    <input asp-for="LastName" class="form-control" placeholder="Last name" />
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col m-1">
+                    <input asp-for="Email" class="form-control" placeholder="E-mail Address" />
+                </div>
+                <div class="col d-flex m-1">
+                    <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">+49</span>
+                    </div>
+                    <input asp-for="Mobile" class="form-control" placeholder="Mobile number">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col m-1">
+                    <input asp-for="Password" class="form-control" placeholder="Password" />
+                </div>
+                <div class="col m-1">
+                    <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" />
+                </div>
+            </div>
+            <div class="form-group m-2">
+                <label class="form-check-label"><input type="checkbox"> I have read the privacy policy</label>
+            </div>
+                <button type="submit" class="btn btn-primary rounded-pill px-5 py-2">Register</button>
+             <div>
+                 Already registered? <a href="#myModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-decoration-none">Login now</a>
+             </div>
+            
+        </form>
+        </div>
+</div>

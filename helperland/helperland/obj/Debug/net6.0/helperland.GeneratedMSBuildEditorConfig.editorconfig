@@ -31,16 +31,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mgsmr/OneDrive/Desktop/Hiperland/helperland/helperland/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mgsmr/OneDrive/Desktop/Hiperland/helperland/helperland/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mgsmr/OneDrive/Desktop/Hiperland/helperland/helperland/Views/Home/Become_a_helper.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCZWNvbWVfYV9oZWxwZXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/mgsmr/OneDrive/Desktop/Hiperland/helperland/helperland/Views/Home/Contact.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mgsmr/OneDrive/Desktop/Hiperland/helperland/helperland/Views/Home/Faq.cshtml]
@@ -69,6 +69,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/mgsmr/OneDrive/Desktop/Hiperland/helperland/helperland/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mgsmr/OneDrive/Desktop/Hiperland/helperland/helperland/Views/SignUp/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnblVwXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mgsmr/OneDrive/Desktop/Hiperland/helperland/helperland/Views/_ViewImports.cshtml]

@@ -1,4 +1,5 @@
 ﻿using helperland.Models;
+using helperland.Repository;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -30,10 +31,7 @@ namespace helperland.Controllers
         {
             return View();
         }
-        public IActionResult Contact()
-        {
-            return View();
-        }
+    
         public IActionResult About()
         {
             return View();

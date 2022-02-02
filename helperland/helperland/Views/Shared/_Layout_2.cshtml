@@ -10,6 +10,41 @@
     <link rel="stylesheet" href="~/helperland.styles.css" asp-append-version="true" />
 </head>
 <body>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login to your account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form  method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="required" placeholder="Email">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="password" class="form-control" required="required" placeholder="Password">
+                                
+                            </div>
+                            <div class="form-group mt-2">
+                            <label class="form-check-label"><input type="checkbox"> Remember me</label>
+                            </div>
+                            <div>
+                                <input type="submit" class="btn btn-primary px-5 mt-2" value="Login">
+                            </div>
+          </form>
+        </div>
+      <div class="modal-footer justify-content-center">
+        <div class="clearfix text-center">
+             <a href="#" class="text-muted"><small>Forgot Password?</small></a><br />
+             Don't have an account? <a asp-controller="SignUp" asp-action="create" class="text-muted"><small>Create an account</small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
@@ -36,10 +71,10 @@
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a class="nav-link" href="/home/Contact">Contact us</a>
+                            <a class="nav-link"  asp-controller="Contact" asp-action="index">Contact us</a>
                         </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link border border-2 rounded-pill bg-blue-cust" href="#">Login</a>
+                        <li class="nav-item">
+                            <a href="#myModal" class="nav-link text-white border border-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
                         </li>
                         <li class="nav-item px-2">
                             <a class="nav-link border border-2 rounded-pill bg-blue-cust" href="/home/become_a_helper">Become a Helper</a>
