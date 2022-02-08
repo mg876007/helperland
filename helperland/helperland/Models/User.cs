@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 
 namespace helperland.Models
@@ -15,15 +16,12 @@ namespace helperland.Models
             ServiceRequestUsers = new HashSet<ServiceRequest>();
             UserAddresses = new HashSet<UserAddress>();
         }
-
         public int UserId { get; set; }
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
-        public string Email { get; set; } = null!;
+        public string? Email { get; set; }
         public string? Password { get; set; }
-        public string Mobile { get; set; } = null!;
-        public int UserTypeId { get; set; }
-        public int? RoleId { get; set; }
+        public string? MobileNumber { get; set; }  
         public int? Gender { get; set; }
         public DateTime? DateOfBirth { get; set; }
         public string? WebSite { get; set; }
@@ -33,10 +31,11 @@ namespace helperland.Models
         public string? ZipCode { get; set; }
         public bool WorksWithPets { get; set; }
         public int? LanguageId { get; set; }
+        public int roleId { get; set; }
         public int? NationalityId { get; set; }
         public string? ResetKey { get; set; }
         public DateTime CreatedDate { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
         public int ModifiedBy { get; set; }
         public bool IsApproved { get; set; }
         public bool IsActive { get; set; }

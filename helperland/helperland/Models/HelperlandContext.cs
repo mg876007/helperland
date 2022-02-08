@@ -41,6 +41,8 @@ namespace helperland.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<City>(entity =>
             {
                 entity.ToTable("City");
@@ -248,7 +250,7 @@ namespace helperland.Models
 
                 entity.Property(e => e.LastName).HasMaxLength(100);
 
-                entity.Property(e => e.Mobile).HasMaxLength(20);
+                entity.Property(e => e.MobileNumber).HasMaxLength(20);
 
                 entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
 
@@ -310,7 +312,6 @@ namespace helperland.Models
 
             OnModelCreatingPartial(modelBuilder);
         }
-
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

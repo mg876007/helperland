@@ -1,0 +1,37 @@
+﻿@model helperland.ViewModels.LoginViewModel;
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login to your account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form  method="post" action="@Url.Action("Login", "Account")">
+              <div asp-validation-summary="All" class="text-danger"></div>
+              @Html.HiddenFor(x => x.ReturnUrl)
+                            <div class="form-group">
+                                <input asp-for="Email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input asp-for="Password" class="form-control" placeholder="Password">
+                                
+                            </div>
+                            <div class="form-group mt-2">
+                            <label asp-for="RememberMe"><input asp-for="RememberMe"/> @Html.DisplayNameFor(m=>m.RememberMe)</label>
+                            </div>
+                            <div>
+                                <input type="submit" value="Login" class="btn btn-primary px-5 mt-2"/>
+                            </div>
+          </form>
+        </div>
+      <div class="modal-footer justify-content-center">
+        <div class="clearfix text-center">
+             <a href="#" class="text-muted"><small>Forgot Password?</small></a><br />
+             Don't have an account? <a asp-controller="Account" asp-action="RegisterCustomer" class="text-muted"><small>Create an account</small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

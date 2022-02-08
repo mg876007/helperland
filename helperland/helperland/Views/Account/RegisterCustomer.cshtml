@@ -1,0 +1,95 @@
+﻿@{
+    Layout = null;
+}
+@model helperland.ViewModels.SignupCustomerViewModel;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - helperland</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/helperland.styles.css" asp-append-version="true" />
+</head>
+<body>
+<div class="container justify-content-center my-5" id="create-account">
+        <div class="row">
+            <h2 class="heading-dark text-center">Create an account</h2>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <p class="para-dark">
+                <hr style="height:1px;width: 62px;border-width:0;color:gray;background-color:gray">
+                <img src="~/images/forma-1-copy-5.png" style="    height: 24px;margin: 4.5px;">
+                <hr style="height:1px;width: 62px;border-width:0;color:gray;background-color:gray">
+            </p>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <form method="post" class="col-6">
+                <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="row">
+                <div class="col m-1">
+                    <div class="form-group">
+                        <input asp-for="Firstname" class="form-control" placeholder="First name" />
+                    <span asp-validation-for="Firstname" class="text-danger"></span>
+                    </div>
+                    
+                </div>
+                <div class="col m-1">
+                    <div class="form-group">
+                    <input asp-for="LastName" class="form-control" placeholder="Last name" />
+                     <span asp-validation-for="LastName" class="text-danger"></span>
+                     </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col m-1">
+                    <div class="form-group">
+                    <input asp-for="Email" class="form-control" placeholder="E-mail Address" />
+                     <span asp-validation-for="Email" class="text-danger"></span>
+                     </div>
+                </div>
+                <div class="col m-1">
+                    <div class="form-group d-flex">
+                    <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3">+49</span>
+                    </div>
+                    <input asp-for="Mobile" class="form-control" placeholder="Mobile number">
+                </div>
+                <span asp-validation-for="Mobile" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col m-1">
+                    <div class="form-group">
+                    <input asp-for="Password" class="form-control" placeholder="Password" />
+                     <span asp-validation-for="Password" class="text-danger"></span>
+                     </div>
+                </div>
+                <div class="col m-1">
+                    <div class="form-group">
+                    <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" />
+                     <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group m-2">
+                <label class="form-check-label"><input asp-for="PrivacyPolicy">@Html.DisplayNameFor(m=>m.PrivacyPolicy)</label>
+                 
+            </div>
+                <button type="submit" class="btn btn-primary rounded-pill px-5 py-2">Register</button>
+             <div>
+                 Already registered? <a href="#myModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-decoration-none">Login now</a>
+             </div>
+            
+        </form>
+        </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
